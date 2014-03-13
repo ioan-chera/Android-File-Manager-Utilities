@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">FileManager</string>
+    
+    <string name="open_folder">Open this folder</string>
+	<string name="cancel">Cancel</string>
+    <string name="action_up_one_level">Up one level</string>
+	
+
+</resources>
