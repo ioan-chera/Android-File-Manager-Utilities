@@ -254,7 +254,8 @@ AdapterView.OnItemClickListener, View.OnClickListener
 		private void setFileList(File dir, boolean notify)
 		{
 			File[] files = dir.listFiles();
-			Arrays.sort(files);
+			if(files != null)
+				Arrays.sort(files);
 			if(mFileList != files)
 			{
 				mCurrentPathLabel.setText(dir.getPath());
@@ -267,7 +268,7 @@ AdapterView.OnItemClickListener, View.OnClickListener
 		@Override
 		public int getCount() 
 		{
-			return mFileList.length;
+			return mFileList != null ? mFileList.length : 0;
 		}
 
 		@Override
